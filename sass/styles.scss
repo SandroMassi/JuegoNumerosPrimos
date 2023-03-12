@@ -1,0 +1,72 @@
+body
+{
+    display: flex;
+    margin: 0%;
+}
+header {
+    display: flex;
+}
+.fondo
+{
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+.juego
+{
+    height:400px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 2%;
+
+}
+.inp
+{
+    height: 25px;
+    width: 25px;
+    margin-right: 4.5%;
+    border: none;
+}
+
+.puntos
+{
+   display: flex;
+
+   height: auto;
+   flex-direction: row;
+   justify-content: space-around; 
+   padding-left: 15%;
+   padding-right: 15%;
+   flex-flow: wrap;
+   padding-left: 15%;
+   padding-right: 15%;
+}
+@media (max-width: 500px) {
+    .puntos1 {
+        width: 60%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .puntos1 {
+        width: 10%;
+    }
+  }
+  @media (max-width: 550px) {
+    .juego {
+        height: auto;
+    }
+  }
+.puntos1
+{
+    
+    
+    float: left;
+    margin-left: 10%;
+    
+}
