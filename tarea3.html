@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col">
+                <label>Dado 1: </label>
+                <label id="dado1">0</label>
+            </div>
+            <div class="col">
+                <label>Dado 2: </label>
+                <label id="dado2">0</label>
+            </div>
+            <div class="col">
+                <label>Dado 3: </label>
+                <label id="dado3">0</label>
+            </div>
+            <div class="col">
+                <label>Dado 4: </label>
+                <label id="dado4">0</label>
+            </div>
+            <div class="col">
+                <label>Dado 5: </label>
+                <label id="dado5">0</label>
+            </div>
+            <button type="button" id="lanzardados" class="btn btn-primary">Dados</button>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<script>
+    const btnLanzardados = document.getElementById("lanzardados");
+    btnLanzardados.addEventListener('click', dados);
+
+    function dados() {
+        for (i = 1; i <= 5; i++) {
+            document.getElementById("dado" + i).innerHTML = Math.floor(Math.random() * 6) + 1;
+        }
+        btnLanzardados.disabled = true;
+    }
+</script>
+
+</html>
