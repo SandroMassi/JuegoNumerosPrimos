@@ -42,7 +42,7 @@ function primo()
       })
       .then((result) => {
         if (result.isConfirmed) {
-            href='index.html'
+            window.location.href='file:///D:/MIS%20DOCUMENTOS/Documents/GitHub/JuegoNumerosPrimos/index.html'
         }
       })
     } else {
@@ -55,7 +55,7 @@ function primo()
           })
           .then((result) => {
             if (result.isConfirmed) {
-                href='index.html'
+                href='file:///D:/MIS%20DOCUMENTOS/Documents/GitHub/JuegoNumerosPrimos/index.html'
             }
           })
     }
