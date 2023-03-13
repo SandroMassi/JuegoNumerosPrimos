@@ -39,3 +39,4 @@ function primo()
         document.getElementById("mensaje2").innerHTML="PERDISTE";
     }
 }
+
