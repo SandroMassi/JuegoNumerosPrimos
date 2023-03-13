@@ -46,7 +46,6 @@ function primo()
             window.location.href='file:///D:/MIS%20DOCUMENTOS/Documents/GitHub/JuegoNumerosPrimos/index.html'
         }
       })
-      setTimeout("document.getElementById('sumatoria').disabled=false",30000);
     } else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
         document.getElementById("mensaje2").innerHTML="PERDISTE";
@@ -61,7 +60,6 @@ function primo()
                 href='file:///D:/MIS%20DOCUMENTOS/Documents/GitHub/JuegoNumerosPrimos/index.html'
             }
           })
-          setTimeout("document.getElementById('sumatoria').disabled=false",30000);
     }
 }
 
