@@ -35,27 +35,27 @@ function primo()
         document.getElementById("resultado").innerHTML="El numero "+valor+" SI es Primo";
     document.getElementById("mensaje1").innerHTML="GANASTE";
     Swal.fire({
-        title: 'Do you want to save the changes?',
+        title: 'QUIERES VOLVER A JUGAR?',
         showCancelButton: true,
         confirmButtonText: 'SI',
 
       })
       .then((result) => {
         if (result.isConfirmed) {
-            window.location.href='file:///D:/MIS%20DOCUMENTOS/Documents/GitHub/JuegoNumerosPrimos/index.html'
+            href='index.html'
         }
       })
     } else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
         document.getElementById("mensaje2").innerHTML="PERDISTE";
         Swal.fire({
-            title: 'Do you want to save the changes?',
+            title: 'QUIERES VOLVER A JUGAR?',
             showCancelButton: true,
             confirmButtonText: 'SI',
           })
           .then((result) => {
             if (result.isConfirmed) {
-                window.location.href='file:///D:/MIS%20DOCUMENTOS/Documents/GitHub/JuegoNumerosPrimos/index.html'
+                href='index.html'
             }
           })
     }
