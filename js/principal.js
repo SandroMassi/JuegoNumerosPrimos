@@ -35,13 +35,15 @@ function primo()
         document.getElementById("resultado").innerHTML="El numero "+valor+" SI es Primo";
     document.getElementById("mensaje1").innerHTML="GANASTE";
     Swal.fire({
-        title: "bienvenido"
+        title: "Quieres volver a jugar?"
+        
     })
     } else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
         document.getElementById("mensaje2").innerHTML="PERDISTE";
         Swal.fire({
-            title: "bienvenido"
+            title: "Quieres volver a jugar?",
+            confirmButtonText:"SI"
         })
     }
 }
