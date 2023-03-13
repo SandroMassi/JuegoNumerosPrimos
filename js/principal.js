@@ -34,38 +34,41 @@ function primo()
     if (esPrimo(valor)) {
         document.getElementById("resultado").innerHTML="El numero "+valor+" SI es Primo";
     document.getElementById("mensaje1").innerHTML="GANASTE";
-   
+    setTimeout(function() {
     Swal.fire({
         
         title: 'QUIERES VOLVER A JUGAR?',
         showCancelButton: true,
         confirmButtonText: 'SI',
         timeR: 30000,
-      },2000)
+      })
       .then((result) => {
         if (result.isConfirmed) {
             location.reload();
         
         }
-      },2000)
+      })
+    },3000);
 
     } 
     else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
         document.getElementById("mensaje2").innerHTML="PERDISTE";
+        setTimeout(function() {
         Swal.fire({
         
             title: 'QUIERES VOLVER A JUGAR?',
             showCancelButton: true,
             confirmButtonText: 'SI',
             timer: 30000,
-          },2000)
+          })
           .then((result) => {
             if (result.isConfirmed) {
                 location.reload();
             
             }
-          },2000)
+          })
+        },3000);
     }
 }
     
