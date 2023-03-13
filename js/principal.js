@@ -41,7 +41,7 @@ function primo()
         title: 'QUIERES VOLVER A JUGAR?',
         showCancelButton: true,
         confirmButtonText: 'SI',
-        timer: 2000,
+        timeR: 30000,
       })
       .then((result) => {
         if (result.isConfirmed) {
@@ -59,7 +59,7 @@ function primo()
             title: 'QUIERES VOLVER A JUGAR?',
             showCancelButton: true,
             confirmButtonText: 'SI',
-            timer: 2000,
+            timer: 30000,
           })
           .then((result) => {
             if (result.isConfirmed) {
