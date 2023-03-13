@@ -39,7 +39,6 @@ function primo()
         showDenyButton: true,
         showCancelButton: true,
         confirmButtonText: 'Save',
-        denyButtonText: `Don't save`,
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
@@ -56,7 +55,6 @@ function primo()
             showDenyButton: true,
             showCancelButton: true,
             confirmButtonText: 'Save',
-            denyButtonText: `Don't save`,
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
