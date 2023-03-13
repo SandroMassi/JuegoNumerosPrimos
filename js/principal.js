@@ -51,6 +51,7 @@ function primo()
             showCancelButton: true,
             confirmButtonText: 'SI',
             //timer: 2000,
+        
           },1000)
     }
 }
@@ -66,7 +67,9 @@ function primo()
       })
       .then((result) => {
         if (result.isConfirmed) {
-            href='file:///D:/MIS%20DOCUMENTOS/Documents/GitHub/JuegoNumerosPrimos/index.html'
+            location.reload();
+            href='file:///C:/Users/Usuario/Documents/GitHub/JuegoNumeroPrimos/JuegoNumerosPrimos/index.html'
+            
         
         }
       })
