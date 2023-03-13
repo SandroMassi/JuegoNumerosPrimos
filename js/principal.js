@@ -36,18 +36,16 @@ function primo()
     document.getElementById("mensaje1").innerHTML="GANASTE";
     Swal.fire({
         title: 'Do you want to save the changes?',
-        showDenyButton: true,
         showCancelButton: true,
-        confirmButtonText: 'Save',
+        confirmButtonText: 'CANCELAR',
       })
     } else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
         document.getElementById("mensaje2").innerHTML="PERDISTE";
         Swal.fire({
             title: 'Do you want to save the changes?',
-            showDenyButton: true,
             showCancelButton: true,
-            confirmButtonText: 'Save',
+            confirmButtonText: 'CANCELAR',
           })
     }
 }
