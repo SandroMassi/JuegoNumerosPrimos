@@ -34,13 +34,14 @@ function primo()
     if (esPrimo(valor)) {
         document.getElementById("resultado").innerHTML="El numero "+valor+" SI es Primo";
     document.getElementById("mensaje1").innerHTML="GANASTE";
+   // Funcion alerta de mensaje
     setTimeout(function() {
     Swal.fire({
         
         title: 'QUIERES VOLVER A JUGAR?',
         showCancelButton: true,
         confirmButtonText: 'SI',
-        timeR: 30000,
+        timer: 30000,
       })
       .then((result) => {
         if (result.isConfirmed) {
@@ -48,7 +49,7 @@ function primo()
         
         }
       })
-    },3000);
+    },2000);
 
     } 
     else {
@@ -68,7 +69,7 @@ function primo()
             
             }
           })
-        },3000);
+        },2000);
     }
 }
     
