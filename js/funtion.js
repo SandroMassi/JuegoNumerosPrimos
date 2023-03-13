@@ -15,4 +15,5 @@ boton.addEventListener("click", function() {
   resultado.innerHTML = "Dado 1: " + dado1 + "<br>" +
                          "Dado 2: " + dado2 + "<br>" +
                          "La suma de los valores es: " + suma;
+                         
 });

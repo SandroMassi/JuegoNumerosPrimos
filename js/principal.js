@@ -34,14 +34,15 @@ function primo()
     if (esPrimo(valor)) {
         document.getElementById("resultado").innerHTML="El numero "+valor+" SI es Primo";
     document.getElementById("mensaje1").innerHTML="GANASTE";
-    setTimeout(function (setTimeout) {
+    setTimeout(function (_setTimeout) {
         Swal.fire({
             title: 'QUIERES VOLVER A JUGAR?',
             showCancelButton: true,
             confirmButtonText: 'SI',
+            //timer: 5000,
         });
 
-    }, 1000);} 
+    }, 3000);} 
     else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
         document.getElementById("mensaje2").innerHTML="PERDISTE";
@@ -50,28 +51,10 @@ function primo()
             title: 'QUIERES VOLVER A JUGAR?',
             showCancelButton: true,
             confirmButtonText: 'SI',
-            //timer: 2000,
+            //timer: 5000,
         
-          },1000)
+          },3000);
     }
 }
-    setTimeout(() => {
-        
-    }, 1000);
-    Swal.fire({
-        
-        title: 'QUIERES VOLVER A JUGAR?',
-        showCancelButton: true,
-        confirmButtonText: 'SI',
-        timer: 2000,
-      })
-      .then((result) => {
-        if (result.isConfirmed) {
-            location.reload();
-            href='file:///C:/Users/Usuario/Documents/GitHub/JuegoNumeroPrimos/JuegoNumerosPrimos/index.html'
-            
-        
-        }
-      })
     
 
