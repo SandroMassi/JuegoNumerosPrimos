@@ -35,28 +35,36 @@ function primo()
         document.getElementById("resultado").innerHTML="El numero "+valor+" SI es Primo";
     document.getElementById("mensaje1").innerHTML="GANASTE";
     Swal.fire({
-        title: "Quieres volver a jugar?",
-        confirmButtonText:'SI',
-        showConfirmButton:true,
-	    confirmButtonColor:'#3e60e9',
-	    confirmButtonAriaLabel:'cancelar',
-        cancelButtonText:'cancelar',
-        
-    })
+        title: 'Do you want to save the changes?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Save',
+        denyButtonText: `Don't save`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          Swal.fire('Saved!', '', 'success')
+        } else if (result.isDenied) {
+          Swal.fire('Changes are not saved', '', 'info')
+        }
+      })
     } else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
         document.getElementById("mensaje2").innerHTML="PERDISTE";
         Swal.fire({
-            title: "Quieres volver a jugar?",
-            confirmButtonText:'SI',
-            showConfirmButton:true,
-            confirmButtonColor:'#3e60e9',
-            confirmButtonAriaLabel:'cancelar',
-            cancelButtonText:'cancelar',
-           
-
-            
-        })
+            title: 'Do you want to save the changes?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Save',
+            denyButtonText: `Don't save`,
+          }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+              Swal.fire('Saved!', '', 'success')
+            } else if (result.isDenied) {
+              Swal.fire('Changes are not saved', '', 'info')
+            }
+          })
     }
 }
 
