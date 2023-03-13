@@ -41,13 +41,13 @@ function primo()
         showCancelButton: true,
         confirmButtonText: 'SI',
         timeR: 30000,
-      })
+      },2000)
       .then((result) => {
         if (result.isConfirmed) {
             location.reload();
         
         }
-      })
+      },2000)
 
     } 
     else {
@@ -59,13 +59,13 @@ function primo()
             showCancelButton: true,
             confirmButtonText: 'SI',
             timer: 30000,
-          })
+          },2000)
           .then((result) => {
             if (result.isConfirmed) {
                 location.reload();
             
             }
-          })
+          },2000)
     }
 }
     
