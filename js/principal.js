@@ -36,7 +36,7 @@ function primo()
     document.getElementById("mensaje1").innerHTML="GANASTE";
    
     Swal.fire({
-        
+        html: 'document.getElementById("1").innerHTML="GANASTE";',
         title: 'QUIERES VOLVER A JUGAR?',
         showCancelButton: true,
         confirmButtonText: 'SI',
@@ -52,9 +52,9 @@ function primo()
     } 
     else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
-        document.getElementById("mensaje2").innerHTML="PERDISTE";
-        Swal.fire({
         
+        Swal.fire({
+            html: 'document.getElementById("mensaje2").innerHTML="PERDISTE";',
             title: 'QUIERES VOLVER A JUGAR?',
             showCancelButton: true,
             confirmButtonText: 'SI',
