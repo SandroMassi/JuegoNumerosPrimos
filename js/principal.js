@@ -37,8 +37,7 @@ function primo()
     Swal.fire({
         title: "Quieres volver a jugar?",
         confirmButtonText:'SI',
-        html: `
-        <input type="button" value="NO" placeholder="NO">>`,
+        cancelButtonAriaLabel:'NO',
         
     })
     } else {
@@ -47,8 +46,8 @@ function primo()
         Swal.fire({
             title: "Quieres volver a jugar?",
             confirmButtonText:'SI',
-            html: `
-            <input type="button" value="NO" placeholder="NO">>`,
+            cancelButtonAriaLabel:'NO',
+           
 
             
         })
