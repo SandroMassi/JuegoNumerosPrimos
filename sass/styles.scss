@@ -22,7 +22,8 @@ header {
     margin-right: 15%;
     background-color: #ffffff;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 4%; 
+    padding-bottom: 4%;
 
 }
 .inp
@@ -69,4 +70,20 @@ header {
     float: left;
     margin-left: 10%;
     
+}
+label
+{
+  font-weight: bold;
+}
+#lanzardadosr{
+  margin-bottom: 5%;
+}
+#mensaje1
+{
+    font-size: large;
+    font-weight: bold;
+}
+#mensaje2{
+    font-size: large;
+    font-weight: bold;
 }
