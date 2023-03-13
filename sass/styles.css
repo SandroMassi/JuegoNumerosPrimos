@@ -63,3 +63,10 @@ header {
   float: left;
   margin-left: 10%;
 }/*# sourceMappingURL=styles.css.map */
+label
+{
+  font-weight: bold;
+}
+.modal-footer{
+  margin-bottom: 5%;
+}
