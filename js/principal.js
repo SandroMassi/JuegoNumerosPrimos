@@ -39,12 +39,12 @@ function primo()
         showCancelButton: true,
         confirmButtonText: 'SI',
 
-      },
-          function(confirmButtonText)
-          {
-            window.location.href='index.html';
-          }
-      )
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+            window.location.href='/index.html'
+        }
+      })
     } else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
         document.getElementById("mensaje2").innerHTML="PERDISTE";
@@ -52,12 +52,12 @@ function primo()
             title: 'Do you want to save the changes?',
             showCancelButton: true,
             confirmButtonText: 'SI',
-          },
-          function(confirmButtonText)
-          {
-            window.location.href='index.html';
-          }
-        )
+          })
+          .then((result) => {
+            if (result.isConfirmed) {
+                window.location.href='/index.html'
+            }
+          })
     }
 }
 
