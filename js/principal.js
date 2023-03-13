@@ -37,11 +37,10 @@ function primo()
     Swal.fire({
         title: "Quieres volver a jugar?",
         confirmButtonText:'SI',
-        confirmButtonText:'SI',
-            ShowConfirmButton: true,
-            ConfirmButtonColor: '#3e60e9',
-            cancelButtonText:'NO',
-            cancelButtonAriaLabel:'NO',
+        showConfirmButton:true,
+	    confirmButtonColor:'#3e60e9',
+	    confirmButtonAriaLabel:'cancelar',
+        cancelButtonText:'cancelar',
         
     })
     } else {
@@ -50,10 +49,10 @@ function primo()
         Swal.fire({
             title: "Quieres volver a jugar?",
             confirmButtonText:'SI',
-            ShowConfirmButton: true,
-            ConfirmButtonColor: '#3e60e9',
-            cancelButtonText:'NO',
-            cancelButtonAriaLabel:'NO',
+            showConfirmButton:true,
+            confirmButtonColor:'#3e60e9',
+            confirmButtonAriaLabel:'cancelar',
+            cancelButtonText:'cancelar',
            
 
             
