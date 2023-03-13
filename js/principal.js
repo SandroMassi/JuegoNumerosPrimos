@@ -35,15 +35,22 @@ function primo()
     if (esPrimo(valor)) {
         document.getElementById("resultado").innerHTML="El numero "+valor+" SI es Primo";
     document.getElementById("mensaje1").innerHTML="GANASTE";
-    setTimeout(function (_setTimeout) {
-        Swal.fire({
-            title: 'QUIERES VOLVER A JUGAR?',
-            showCancelButton: true,
-            confirmButtonText: 'SI',
-            //timer: 5000,
-        });
+   
+    Swal.fire({
+        
+        title: 'QUIERES VOLVER A JUGAR?',
+        showCancelButton: true,
+        confirmButtonText: 'SI',
+        timer: 2000,
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+            location.reload();
+        
+        }
+      })
 
-    }, 3000);} 
+    } 
     else {
         document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
         document.getElementById("mensaje2").innerHTML="PERDISTE";
@@ -52,10 +59,16 @@ function primo()
             title: 'QUIERES VOLVER A JUGAR?',
             showCancelButton: true,
             confirmButtonText: 'SI',
-            //timer: 5000,
-        
-          },3000);
+            timer: 2000,
+          })
+          .then((result) => {
+            if (result.isConfirmed) {
+                location.reload();
+            
+            }
+          })
     }
 }
+    
     
 
