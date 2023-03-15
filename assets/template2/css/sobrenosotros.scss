@@ -1,0 +1,82 @@
+
+// variables
+$color-principal:black;
+$color-letras:blue;
+$color-prim:white;
+$color-seg:dark;
+$color-ter:yellow;
+$color-cuar:rgb(248, 93, 248);
+$color-a:red;
+$font-family1: Open Sans;
+
+body{
+    background-color: $color-prim;
+}
+h2{
+    color: $color-principal;
+}
+p{
+    color:$color-principal;
+    text-decoration:none;
+    padding: 2px;
+    font-family:'Open Sans';
+}
+.navbar-nav {
+    >li {
+        >a {
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-right: 20px;
+            color: $color-prim;
+        }
+    }
+}
+//anidado
+.navbar-brand {
+    color: $color_1;
+    font-family: $font-family1;
+    margin-bottom: 4px;
+    font-size: 27px;
+
+    &:hover {
+        color: $color-prim;
+    }
+}
+.navbar-red {
+    &:hover {
+        .wrapper {
+            clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+        }
+    }
+
+    background-color: $color-a;
+    color:$color-prim;
+}
+.all-show {
+    z-index: 10;
+}
+
+* {
+    font-family: $font-family1;
+}
+@media (max-width: 500px) {
+    .bd-placeholder-img-lg {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        color:$color-principal;
+
+    }
+    p{
+        font-size: 5px;
+        color:$color-principal;
+        font-family: $font-family1;
+
+    }
+}
+.footer{
+    font-family: $font-family1; 
+}
+    

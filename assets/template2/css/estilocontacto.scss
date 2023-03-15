@@ -1,0 +1,43 @@
+$color-letra:rgb(17, 17, 211);
+$color-principal:rgb(181, 179, 179);
+$color-secundario:rgb(126, 125, 125);
+body{
+    background-color: $color-principal;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+    color: $color-letra;
+}
+
+
+@media (min-width: 768px) { 
+    h4 {
+        font-size: 30px;
+        color: green;
+    }
+    body{
+        background-color: $color-principal;
+        
+    }
+}
+
+@media (max-width: 880px) {
+
+    h4 {
+        font-size: 20px;
+        color: black;
+    }
+    h3{
+        color: rgb(182, 170, 170);
+    }
+    body{
+        background-color: $color-secundario;
+        font-family: Open Sans;
+    }
+     p{
+         font-size: 12px;
+         color:black;
+     }
+     
+}

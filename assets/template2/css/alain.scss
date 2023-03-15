@@ -1,0 +1,353 @@
+$color_1: #fff;
+$color_2: #ffffff;
+$color_3: lightseagreen;
+$color_4: inherit;
+$color_5: #222;
+$color_6: #92999f;
+$font-family_1: 'Allerta Stencil', sans-serif;
+$font-family_2: Open Sans;
+$background-color_1: rgba(91, 255, 2, 0.1);
+$background-color_2: #fff;
+$background-color_3: transparent;
+$background-color_4: #000;
+$background-color_5: red;
+$background-color_6: #33383b;
+
+button {
+    background: none;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.accordion {
+    border: 1px solid rgb(40, 40, 40);
+}
+
+.accordion-button {
+    border: none;
+}
+
+@import "https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700";
+
+/* Footer left */
+/* The company logo */
+/* Footer links */
+/* Footer Center */
+/* Footer Right */
+/* If you don't want the footer to be responsive, remove these media queries */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: $background-color_1;
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+
+    .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+body {
+    background-color: $background-color_2;
+}
+
+.navbar-nav {
+    >li {
+        >a {
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-right: 20px;
+            color: $color_1;
+        }
+    }
+}
+
+.navbar-toggler {
+    padding: .20rem .50rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: $background-color_3;
+    border: 1px solid white;
+}
+
+.nav-link {
+    color: $color_1 !important;
+}
+
+.wrapper {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: $background-color_4;
+    clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
+    transition: 1s all;
+}
+
+.navbar-brand {
+    color: $color_1;
+    font-family: $font-family_1;
+    margin-bottom: 4px;
+    font-size: 27px;
+
+    &:hover {
+        color: $color_1;
+    }
+}
+
+.navbar-red {
+    &:hover {
+        .wrapper {
+            clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+        }
+    }
+
+    background-color: $background-color_5;
+    color: $color_1;
+}
+
+.all-show {
+    z-index: 10;
+}
+
+* {
+    font-family: $font-family_2;
+}
+
+section {
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+
+    .footer-left {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+    }
+
+    .footer-center {
+        display: inline-block;
+        vertical-align: top;
+        width: 35%;
+
+        i {
+            background-color: $background-color_6;
+            color: $color_2;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+        }
+
+        i.fa-envelope {
+            font-size: 17px;
+            line-height: 38px;
+        }
+
+        p {
+            display: inline-block;
+            color: $color_2;
+            font-weight: 400;
+            vertical-align: middle;
+            margin: 0;
+
+            span {
+                display: block;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 2;
+            }
+
+            a {
+                color: $color_3;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .footer-right {
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+    }
+
+    h3 {
+        color: $color_2;
+        font: normal 36px 'Open Sans', cursive;
+        margin: 0;
+
+        span {
+            color: $color_3;
+        }
+    }
+
+    .footer-links {
+        color: $color_2;
+        margin: 20px 0 12px;
+        padding: 0;
+
+        a {
+            display: inline-block;
+            line-height: 1.8;
+            font-weight: 400;
+            text-decoration: none;
+            color: $color_4;
+
+            &:before {
+                content: "|";
+                font-weight: 300;
+                font-size: 20px;
+                left: 0;
+                color: $color_1;
+                display: inline-block;
+                padding-right: 5px;
+            }
+        }
+
+        .link-1 {
+            &:before {
+                content: none;
+            }
+        }
+    }
+
+    .footer-company-name {
+        color: $color_5;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .footer-company-about {
+        line-height: 20px;
+        color: $color_6;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+
+        span {
+            display: block;
+            color: $color_2;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-icons {
+        margin-top: 25px;
+
+        a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: $background-color_6;
+            border-radius: 2px;
+            font-size: 20px;
+            color: $color_2;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+
+        .footer-left {
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .footer-center {
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+
+            i {
+                margin-left: 0;
+            }
+        }
+
+        .footer-right {
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    h6 {
+        font-size: 20px;
+    }
+
+}

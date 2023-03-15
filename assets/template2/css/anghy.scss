@@ -1,0 +1,57 @@
+//variables
+$color-principal: rgb(76, 20, 150);
+$color-secundario:yellow;
+$color-uno:rgb(187, 10, 107);
+$color-dos:rgb(10, 94, 54);
+
+body{
+    background-color: rgb(40, 150, 158);
+}
+nav{
+    background-color: $color-principal;
+}
+
+button{
+    background-color: aqua;
+
+}
+@media (max-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+    h1{
+        color: $color-principal;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    p{
+        color: $color-secundario;
+    }
+   
+   
+}
+@media (min-width: 300px) {
+    .bd-placeholder-img-lg {
+        font-size: 30px;
+    }
+    h1{
+        color: $color-uno;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 10px;
+    }
+p tipo{
+    font-size: 200px;
+}
+}
+@media (min-width: 250px) {
+    .bd-placeholder-img-lg {
+        font-size: 20px;
+    }
+    button{
+        color: $color-dos;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 5px;
+    }
+  
+   
+}

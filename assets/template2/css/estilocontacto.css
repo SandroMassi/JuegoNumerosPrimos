@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(181, 179, 179);
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+  color: rgb(17, 17, 211);
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 30px;
+    color: green;
+  }
+}
+@media (max-width: 880px) {
+  h4 {
+    font-size: 20px;
+    color: red;
+  }
+  body {
+    background-color: rgb(39, 37, 37);
+  }
+}/*# sourceMappingURL=estilocontacto.css.map */
